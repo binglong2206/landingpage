@@ -1,0 +1,196 @@
+* {
+    font-family: sans-serif;
+}
+body{
+    margin:0;
+}
+
+/**** NavBar ****/
+.navbar{
+    background-color:#1F2937;
+    margin: 0;
+    padding: 10px 25px 10px 25px;    
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.logo{
+    max-width: 100px;
+}
+ul {
+    display:flex;
+    align-items: center;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.anchorLink {
+    text-decoration: none;
+    color:white;
+}
+  
+
+/**** SECTION1 HERO SECTION, CONTENT + IMAGE ****/
+.section1 {
+    background-color: #1F2937;
+    margin: 0;
+}
+
+.section1 .container{
+    display: flex;
+    max-width: 1024px;
+    margin-left: auto; /*letting the margin to take up the extra available spaces, setting justify-content center wouldn't work because it will only align the 2 contents in itself, which is already center*/
+    margin-right: auto; /*alternative, is to flex the .section1 and justify-content center to move this container to center, but that seems abit overkill*/
+    align-items: center;
+    padding:50px 70px 150px 70px;
+}
+
+.leftContent {
+    width: 60%;
+    padding-right: 50px;
+}
+.leftContent button{
+    padding: 15px 20px 15px 20px;
+    border-radius: 12px;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.rightContent{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.leftContent .title {
+    color:white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.leftContent .subtext {
+    color:white; 
+    font-size: 18px;
+}
+
+.rightContent img {
+    max-width: 350px;
+}
+
+
+
+
+/**** SECTION2 LIST OF INFO ****/
+.section2{
+    background-color: honeydew;
+    margin: 0px;
+}
+
+.section2 .container{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 50px 70px 50px;
+}
+.section2 h2{
+    text-align: center;
+    margin: 0px 0px 50px 0px; /* fcking h2 has default margins */
+}
+
+
+.section2 .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.info .content{
+    border:5px solid blue;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.info img{
+    width: 150px;
+}
+
+
+
+
+/**** SECTION3 QUOTE & NAME QUOTE ****/
+.section3{
+    background-color:lightgray;
+    display: flex;
+    justify-content: center; /*centers the whole container*/
+    align-items: center;
+}
+
+.section3 .container{
+    max-width: 1024px;
+    /* background-color: red; */
+}
+.section3 .quotes {
+    padding: 100px;
+    /* background-color: rosybrown; */
+}
+.section3 .quoteText{
+    font-size: 2em;
+}
+.section3 .quoteName{
+    text-align: end;
+    font-size: 1.8em;
+}
+
+
+/**** SECTION4 CALL TO ACTION ****/
+.section4{
+    background-color: lightgreen;
+    
+}
+
+.section4 .container{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto; /*set the container's children(modal) to center, height can be set by section's padding*/
+    padding: 90px 0px 70px 0px;
+}
+.section4 .modal{
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    padding: 50px 100px 50px 100px;
+}
+.section4 .text{
+    font-size: 2em;
+    color:white;
+}
+.section4 .subText{
+    font-size: 1.2em;
+    color: white;
+}
+.section4 button{
+    padding: 30px;
+}
+
+
+/**** SECTION5 FOOTER ****/
+footer{
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
